@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: idroid;
+    src: url('fontes/idroid.otf');
+    font-weight: normal;
+    font-style: normal;
+ }
+ @font-face{
+    font-family: bebas;
+    src: url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+ }
+
+
+    :root{
+        --cor0: #c4fcd4;
+        --cor1: #92e6a7;
+        --cor2: #4ad653;
+        --cor4: #1a7431;
+        --cor5: #10451d;
+
+        --fonte-padrao: 'arial',verdana,helvetica,sans-serif;
+        --fonte-destaque: 'Bebas Neue', cursive;
+        --fonte-android: 'idroid', cursive;
+
+    }
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    a.externo::after{
+        content: '\00a0\1F517';
+    }
+    
+    body{
+        font-family: var(--fonte-padrao);
+        text-align: justify;
+        background-color: #92e6a7;
+        
+    }
+    header > h1{
+        font-family: var(--fonte-destaque);
+        color: white;
+        margin-bottom: 20PX;
+        text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.651)
+    }
+    header{
+        background-image: linear-gradient(0deg, #10451d , transparent);
+        min-height: 150px;
+        text-align: center;
+        padding-top: 40PX;
+    }
+    header > p{
+        color: white;
+        font-family: var(--fonte-padrao);
+        font-size: 1.2em;
+        max-width: 500px;
+        margin: auto;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    nav{
+        background-color: var(--cor5);
+        padding: 10px;
+        box-shadow: 0px 3px 4px -1px rgba(0, 0, 0, 0.589);
+        
+    }
+    nav a:hover{
+        background-color: var(--cor2);
+    }
+    nav a{
+        color: rgb(130, 184, 139);
+        padding: 10px;
+        text-decoration: none;
+        transition-duration: .3s;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+    main{
+        background-color: white;
+        margin: auto;
+        padding: 20px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        min-width: 300px;
+        max-width: 800px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.589);
+        margin-bottom: 30px;
+    }
+    div.video{
+        background-color: #10451d;
+        margin: 0px 20px 30px -20px;
+        padding: 20px;
+        position: relative;
+        padding-bottom: 58%;
+    }
+    div.video > iframe{
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        height: 90%;
+    }
+    main picture{
+        width: 350px;
+        margin: auto;
+
+    }
+    main p{
+        text-indent: 30px;
+        text-align: justify;
+        margin: 15px 0px;
+        line-height: 2em;
+        font-size: 1em;
+    }
+    main strong{
+        padding: 2px 6px;
+        font-weight: bold;
+        color: var(--cor4);
+        
+    }
+    main a{
+        background-color: var(--cor2);
+        color: var(--cor5);
+        text-decoration: none;
+        text-indent: 20px;
+        font-weight: bold;
+    }
+
+    main a:hover{
+        background-color: var(--cor1);
+        text-decoration: underline;
+    }
+    main img.droid{
+        margin: auto;
+        display: block;
+        margin: auto;
+    }
+    main h1{
+        font-family: var(--fonte-android);
+    }
+    main h2{
+        font-family: var(--fonte-android);
+        font-size: 1.2em;
+        background-image: linear-gradient(45deg, #1a7431, transparent);
+        padding-left: 5px;
+    }
+    aside{
+        background-color: #92e6a7;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.589);
+    }
+    aside > ul{
+        list-style-type: '\2714\00a0\00a0';
+        list-style-position: inside;
+        columns: 2;
+        padding: 5px;
+        
+    }
+    aside h3{
+        background-color: var(--cor4);
+        color: white;
+        padding: 10px;
+        margin: -10px -10px 0px -10px;
+        border-radius: 10px 10px 0px 0px;
+    }
+    footer{
+        background-color: #10451d;
+        text-align: center;
+        color: white;
+        padding: 5px;
+    }
+    
+
